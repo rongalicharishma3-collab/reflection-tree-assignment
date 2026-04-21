@@ -1,0 +1,172 @@
+{
+ "start": "q1",
+ "nodes": {
+
+  "q1": {
+   "type": "question",
+   "axis": "axis1_awareness",
+   "text": "How do you usually react when facing a difficult situation at work?",
+   "options": {
+    "avoid_it": "d1",
+    "blame_others": "d2",
+    "analyze_problem": "q2",
+    "seek_help": "q2"
+   }
+  },
+
+  "d1": {
+   "type": "decision",
+   "text": "Avoidance may delay solving the issue.",
+   "next": "r1"
+  },
+
+  "d2": {
+   "type": "decision",
+   "text": "Blaming others reduces ownership.",
+   "next": "r1"
+  },
+
+  "r1": {
+   "type": "reflection",
+   "axis": "axis1_awareness",
+   "text": "Recognizing your response pattern is the first step toward improving problem-solving.",
+   "next": "q2"
+  },
+
+  "q2": {
+   "type": "question",
+   "axis": "axis1_awareness",
+   "text": "How often do you reflect on your daily actions?",
+   "options": {
+    "never": "d3",
+    "rarely": "d3",
+    "sometimes": "q3",
+    "regularly": "q3"
+   }
+  },
+
+  "d3": {
+   "type": "decision",
+   "text": "Reflection is essential for learning.",
+   "next": "r2"
+  },
+
+  "r2": {
+   "type": "reflection",
+   "axis": "axis1_awareness",
+   "text": "Regular reflection helps identify patterns and growth opportunities.",
+   "next": "bridge1"
+  },
+
+  "q3": {
+   "type": "question",
+   "axis": "axis1_awareness",
+   "text": "What motivates you most in your work?",
+   "options": {
+    "salary": "bridge1",
+    "recognition": "bridge1",
+    "learning": "bridge1",
+    "impact": "bridge1"
+   }
+  },
+
+  "bridge1": {
+   "type": "bridge",
+   "text": "Moving from self-awareness to contribution awareness.",
+   "next": "q4"
+  },
+
+  "q4": {
+   "type": "question",
+   "axis": "axis2_contribution",
+   "text": "How do you respond when a teammate needs help?",
+   "options": {
+    "ignore": "d4",
+    "help_if_free": "q5",
+    "actively_help": "q5"
+   }
+  },
+
+  "d4": {
+   "type": "decision",
+   "text": "Ignoring team needs weakens collaboration.",
+   "next": "r3"
+  },
+
+  "r3": {
+   "type": "reflection",
+   "axis": "axis2_contribution",
+   "text": "Strong teams grow when individuals support each other.",
+   "next": "q5"
+  },
+
+  "q5": {
+   "type": "question",
+   "axis": "axis2_contribution",
+   "text": "How do you measure your success?",
+   "options": {
+    "personal_gain": "q6",
+    "team_success": "q6",
+    "learning_growth": "q6"
+   }
+  },
+
+  "q6": {
+   "type": "question",
+   "axis": "axis2_contribution",
+   "text": "What role do you prefer in a team?",
+   "options": {
+    "leader": "bridge2",
+    "supporter": "bridge2",
+    "independent_worker": "bridge2"
+   }
+  },
+
+  "bridge2": {
+   "type": "bridge",
+   "text": "Transitioning from contribution awareness to growth mindset.",
+   "next": "q7"
+  },
+
+  "q7": {
+   "type": "question",
+   "axis": "axis3_growth",
+   "text": "How do you handle failure?",
+   "options": {
+    "feel_defeated": "d5",
+    "learn_from_it": "q8",
+    "try_again": "q8"
+   }
+  },
+
+  "d5": {
+   "type": "decision",
+   "text": "Failure can be a learning opportunity.",
+   "next": "r4"
+  },
+
+  "r4": {
+   "type": "reflection",
+   "axis": "axis3_growth",
+   "text": "Growth mindset converts failure into improvement.",
+   "next": "q8"
+  },
+
+  "q8": {
+   "type": "question",
+   "axis": "axis3_growth",
+   "text": "What drives your long-term development?",
+   "options": {
+    "career_growth": "summary",
+    "knowledge": "summary",
+    "impact_on_others": "summary"
+   }
+  },
+
+  "summary": {
+   "type": "summary",
+   "text": "Your reflection journey highlights how awareness, contribution, and growth mindset shape professional development."
+  }
+
+ }
+}
