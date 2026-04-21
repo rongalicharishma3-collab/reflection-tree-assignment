@@ -1,5 +1,7 @@
 ````markdown
 ```mermaid
+graph TD
+
 q1 --> d1
 q1 --> d2
 q1 --> q2
@@ -30,3 +32,4 @@ d5 --> r4
 r4 --> q8
 
 q8 --> summary
+```
