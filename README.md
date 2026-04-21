@@ -58,6 +58,19 @@ Examines responses to failure and long-term development motivations.
 
 ---
 
+
+## Running the Reflection Agent
+
+1. Install Python
+2. Run the program:
+
+python reflection_agent.py
+
+The program will load the reflection tree and guide the user through the reflection questions.
+
+---
+
+
 ## Technologies Used
 
 - JSON for structured tree data
