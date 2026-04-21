@@ -1,4 +1,3 @@
-````markdown
 ```mermaid
 graph TD
 
